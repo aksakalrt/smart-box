@@ -8,29 +8,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <title>Giriş Yap</title>
+    <title>Admin</title>
 </head>
 
 <body>
 
     <div class="d-flex justify-content-center align-items-center vh-100">
         <div class="d-flex flex-column w-25 border mx-2 p-3">
-            <form action="/login/" method="POST">
+            <form action="/admin/" method="POST">
 
                 <div class="input-group mb-3">
-                    <span class="input-group-text w-25">Mail</span>
-                    <input name="mail" value="aksakalrt@gmail.com" type="text" class="form-control" placeholder="Mail Adresi Giriniz">
+                    <span class="input-group-text w-50">Kutu Kodu</span>
+                    <input name="box_code" type="text" class="form-control" placeholder="Kutu Kodu Giriniz">
                 </div>
 
                 <div class="input-group mb-3">
-                    <span class="input-group-text w-25">Şifre</span>
-                    <input name="pwd" value="recep123" type="password" class="form-control" placeholder="Şifrenizi Giriniz">
-                </div>
-                <div class="d-flex">
-                    <button id="btn_bc" class="btn btn-outline-success w-50 m-2" type="submit">Giriş Yap</button>
-                    <a href="/register" class="btn btn-outline-info w-50 m-2">Üye Ol</a>
+                    <span class="input-group-text w-50">Kapasite(gr)</span>
+                    <input name="capacity" type="text" class="form-control" placeholder="Kapasiteyi Giriniz">
                 </div>
 
+                <button id="btn_bc" class="btn btn-outline-success w-100" type="submit">Kutu Ekle</button>
 
             </form>
         </div>
